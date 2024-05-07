@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kape G - Book</title>
+	<link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="booking";>
+
+<div class="navbar">
+    <div class="logo">
+      <h2>Kape G</h2>
+    </div>
+    <div class="navList">
+      <ul>
+<li><a href="homepage.html">Home</a></li>
+          <li><a href="about.html"  >About Us</a></li>
+          <li><a href="menu.html"  >Menu</a></li>
+          <li><a href="Packages.html"  >Packages</a></li>
+          <li><a href="Location.html"  >Location</a></li>
+          <li><a href="Gallery.html"  >Gallery</a></li>
+          <li><a href="FAQ.html"  >FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+    <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+		
+		<img src="images/LOGO.jpg" alt="logo" width="200" height="200" usemap="#KapeG">
+		<map name="KapeG">
+		<area shape="rect" coords="1,1,199,199" alt="Kape G logo" href="https://www.facebook.com/people/KAPE-G/100091945552304/" target="_blank">
+		</map>
+
+		
+            <h2>Book your reservation</h2>
+            <form action="gcoffee.ph2023@gmail.com" method="post" enctype="text/plain">
+                <label for="name" class="formbold-form-label">Name</label>
+                <input type="text" id="name" name="name" class="formbold-form-input" required><br>
+                
+                <label for="email" class="formbold-form-label">Email</label>
+                <input type="email" id="email" name="email" class="formbold-form-input" required><br>
+                
+                <label for="phone" class="formbold-form-label">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="formbold-form-input" required><br>
+                
+                <label for="date" class="formbold-form-label">Date</label>
+                <input type="date" id="date" name="date" class="formbold-form-input" required><br>
+                
+                <label for="time" class="formbold-form-label">Time</label>
+                <input type="time" id="time" name="time" class="formbold-form-input" required><br>
+                
+                <label for="guests" class="formbold-form-label">Number of Guests</label>
+                <input type="number" id="guests" name="guests" class="formbold-form-input" required><br>
+                
+                <label for="comments" class="formbold-form-label">Special Requests</label>
+                <textarea id="comments" name="comments" rows="4" cols="50" class="formbold-form-input"></textarea><br>
+                
+                <input type="submit" value="Submit" class="formbold-btn">
+                <input type="reset" value="Reset" class="formbold-btn" style="background-color: red; margin-left: 10px;">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

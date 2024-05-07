@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kape G - Learn More</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      /* General styles */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Bree Serif", sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .navbar {
+        background-color: #333;
+        color: #fff;
+        padding: 15px 0;
+        text-align: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+      }
+
+      .logo h2 {
+        margin: 0;
+        font-size: 32px;
+        color: #ffd700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .navList ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .navList ul li {
+        display: inline;
+        margin: 0 15px;
+        position: relative;
+      }
+
+      .navList ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s;
+        position: relative;
+      }
+
+      .navList ul li a::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #ffd700;
+        transform: scaleX(0);
+        transition: transform 0.3s;
+        transform-origin: center;
+      }
+
+      .navList ul li a:hover::before {
+        transform: scaleX(1);
+      }
+
+      .navList ul li a:hover {
+        color: #ffd700;
+      }
+
+      .navList span.fas {
+        color: #fff;
+        font-size: 18px;
+      }
+
+      .navList span.fas:hover {
+        color: #ffd700;
+      }
+
+      .content {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .content h1 {
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .content p {
+        font-size: 18px;
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .btn {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 26px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #333;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #ffd700;
+        border-color: #ffd700;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <h2>Kape G</h2>
+      </div>
+      <div class="navList">
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="Book.html">Book Now</a></li>
+          <li><a href="Packages.html">Packages</a></li>
+          <li><a href="Location.html">Location</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+        <span class="fas fa-search"></span>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>Learn More About Us</h1>
+      <p>
+        Welcome to Kape G! Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Sed vitae aliquet mauris. Donec nec nisi vitae ex finibus
+        vulputate. Nam lobortis nisi nec libero consequat, vel efficitur arcu
+        bibendum. Nulla facilisi. Sed rhoncus, felis ut tristique fermentum,
+        magna mi luctus magna, sit amet venenatis sem elit eget eros. Nam
+        condimentum velit nec nisi scelerisque, at mattis elit cursus.
+      </p>
+      <a href="#" class="btn">Homepage</a>
+      <a href="#" class="btn">About Us</a>
+      <a href="#" class="btn">Menu</a>
+      <a href="#" class="btn">Book Now</a>
+      <a href="#" class="btn">Packages</a>
+      <a href="#" class="btn">Location</a>
+      <a href="#" class="btn">Gallery</a>
+      <a href="#" class="btn">FAQ</a>
+    </div>
+  </body>
+</html>

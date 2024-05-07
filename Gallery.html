@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kape G - Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="no-background">
+    <div class="navbar">
+      <div class="logo">
+        <h2>Kape G</h2>
+      </div>
+      <div class="navList">
+        <ul>
+		  <li><a href="homepage.html">Home</a></li>
+          <li><a href="about.html"  >About Us</a></li>
+          <li><a href="menu.html"  >Menu</a></li>
+          <li><a href="Packages.html"  >Packages</a></li>
+          <li><a href="Location.html"  >Location</a></li>
+          <li><a href="Gallery.html"  >Gallery</a></li>
+          <li><a href="FAQ.html"  >FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="content">
+        <!-- Add your specific content for each page here -->
+        <h1>Coffee Memories</h1>
+        <div class="gallery">
+        <!-- Gallery Items -->
+        <div class="gallery-item">
+            <img src="images/gallery1.jpeg" alt="Image 1" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery2.jpeg" alt="Image 2" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery3.jpeg" alt="Image 3" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery4.jpeg" alt="Image 4" onclick="openModal(this)">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery5.jpeg" alt="Image 5" onclick="openModal(this)">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery6.jpeg" alt="Image 6" onclick="openModal(this)">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery7.jpeg" alt="Image 7" onclick="openModal(this)">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery8.jpg" alt="Image 8" onclick="openModal(this)">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery9.jpg" alt="Image 9" onclick="openModal(this)">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery10.jpg" alt="Image 10" onclick="openModal(this)">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery11.jpg" alt="Image 11" onclick="openModal(this)">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery12.jpg" alt="Image 12" onclick="openModal(this)">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery13.jpg" alt="Image 13" onclick="openModal(this)">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery14.jpg" alt="Image 14" onclick="openModal(this)">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery15.jpg" alt="Image 15" onclick="openModal(this)">
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="myModal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Modal Image">
+        </div>
+    </div>
+
+    <script>
+        // Open the modal and display the clicked image
+        function openModal(img) {
+            const modal = document.getElementById('myModal');
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = img.src;
+            modal.style.display = 'flex';
+        }
+
+        // Close the modal
+        function closeModal() {
+            const modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+    </script>
+      </div>
+    </div>
+  </body>
+</html>
